@@ -31,6 +31,9 @@ app.use((req, _, next) => {
   next()
 })
 
+
+app.set('port', process.env.PORT || 3000);
+
 /**
  * Configure routes
  */
